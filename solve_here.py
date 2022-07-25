@@ -25,9 +25,11 @@ def day_delta(d1, d2):
     return(delta)
 
 
-def hour_delta(h1, h2):
+def hour_delta(h1, h2, utc):
     delta = h1-h2
+    delta2 = utc
     return(delta)
+
 
 
 
