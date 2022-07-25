@@ -11,7 +11,6 @@ delta = d1 - d0
 def get_month(d1):
     m1 = list(calendar.month_abbr).index(d1[2])
     return(m1)
-cd one
 #  find the amount of days in between the two given times
 def day_delta(d1, d2):
 
@@ -26,9 +25,13 @@ def day_delta(d1, d2):
     return(delta)
 
 
-# def hor_delta(h1, h2):
+def hour_delta(h1, h2):
+    delta = h1-h2
+    return(delta)
+
 
 
 # print(get_month("Sun 10 May 2015 13:54:36 -0700"))
+
 
 print(day_delta("Sun 12 May 2015 13:54:36 -0700", "Sun 10 May 2015 13:54:36 0000"))
