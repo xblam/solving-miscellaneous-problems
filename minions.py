@@ -12,27 +12,21 @@ def unique(ls):
 
 
 def minion_game(string):
-    points = list()
     Stuart = 0
     Kevin = 0
+    length = len(string)
 
-    for i in range(len(string)):
-        for j in range(i+1,len(string)+1):
-            points.append(string[i:j])
-    
-    for j in points:
-
-        if j[0] in "AEIOU":
-            Kevin+=1
+    for i in range(length):
+        if string[i].upper() in "AEIOU":
+            Kevin += length-i
         else:
-            Stuart+=1
-    
-    if Stuart>Kevin:
-        return(f'Stuart {Stuart}')
-    elif Kevin>Stuart:
-        return(f'Kevin {Kevin}')
+            Stuart += length-i
+    if Stuart > Kevin:
+        print(f'Stuart {Stuart}')
+    elif Kevin > Stuart:
+        print(f'Kevin {Kevin}')
     else:
-        print("Draw")
-    
+        print('Draw')
 
-print(minion_game('BANANANA'))
+
+print(minion_game('BANANA'))
