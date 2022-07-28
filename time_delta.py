@@ -2,7 +2,6 @@ from datetime import date, datetime
 import calendar
 
 
-
 # datetime1 = date(2004, 3,17)
 # datetime2 = date(2004,5,17)
 # sec_days =  int(datetime1 - datetime2)
